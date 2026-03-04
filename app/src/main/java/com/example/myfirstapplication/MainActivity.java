@@ -1,6 +1,7 @@
 package com.example.myfirstapplication;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -25,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Bundle extras = getIntent().getExtras();
+        String msg = extras.getString("message");
+        TextView textView = findViewById(R.id.textViewOutput);
+        textView.setText(msg);
     }
 
     public void displayMessage(View view) {
