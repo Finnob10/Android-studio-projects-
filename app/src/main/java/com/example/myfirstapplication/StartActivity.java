@@ -34,6 +34,16 @@ public class StartActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonUILocation = findViewById(R.id.buttonUILocation);
+        buttonUILocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(StartActivity.this, LocationServicesActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
 
