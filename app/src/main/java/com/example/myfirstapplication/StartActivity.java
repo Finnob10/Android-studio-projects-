@@ -44,6 +44,19 @@ public class StartActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonUIML = findViewById(R.id.buttonUIML);
+        buttonUIML.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(StartActivity.this, MLkitActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
     }
 }
 
