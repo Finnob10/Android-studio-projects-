@@ -8,6 +8,7 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
+
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -19,6 +20,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApplication">
+        <activity
+            android:name=".ListViewActivity"
+            android:exported="false" />
         <activity
             android:name=".MLkitActivity"
             android:exported="false" />

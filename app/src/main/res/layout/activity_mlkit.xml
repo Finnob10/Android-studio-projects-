@@ -9,15 +9,14 @@
 
     <Button
         android:id="@+id/LoadImage"
-        android:layout_width="173dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="160dp"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="161dp"
+        android:layout_marginEnd="32dp"
         android:onClick="loadImage"
         android:text="Load Image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.413"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/UIOpenCamera" />
 
@@ -25,13 +24,13 @@
         android:id="@+id/UIOpenCamera"
         android:layout_width="172dp"
         android:layout_height="50dp"
-        android:layout_marginStart="160dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="161dp"
+        android:layout_marginEnd="32dp"
         android:onClick="openCamera"
         android:text="Open Camera"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewMLKit" />
 
@@ -60,4 +59,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="110dp" />
+
+    <Button
+        android:id="@+id/buttonOpenListView"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="openListView"
+        android:text="Open List View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoadImage"
+        app:layout_constraintVertical_bias="0.052" />
 </androidx.constraintlayout.widget.ConstraintLayout>
