@@ -21,6 +21,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApplication">
         <activity
+            android:name=".SQLiteActivity"
+            android:exported="false" />
+        <activity
             android:name=".ListViewActivity"
             android:exported="false" />
         <activity
